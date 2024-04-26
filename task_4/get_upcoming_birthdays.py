@@ -28,7 +28,6 @@ def get_upcoming_birthdays(users):
         birthday = birthday.replace(year=today.year)
         
         if check_if_birthday_is_within_week(today, birthday):
-            determine_congratulation_date(birthday)
             upcoming_birthdays.append({
               "name": user["name"],
               "congratulation_date": determine_congratulation_date(birthday),
